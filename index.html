@@ -20,7 +20,15 @@
 
     </head>
 
-    <body>
+<body>
+
+
+<div class="cover">
+    <center>
+        <h3 style="color: #000;opacity: 50%;">Made by Vilas Hegde</h3>
+    </center>
+
+
         <section class="glass">
             <div class="container">
                 <div class="card">
@@ -49,6 +57,9 @@
                     </div>
             </div>
         </section>
+
+
+
         <section class="landcalc">
         <div class="holder">
             <form class="calculator" name="calc">
@@ -98,7 +109,9 @@
 
     <script type="text/javascript" src="vanilla-tilt.js">
     </script>
-    </body>
+
+    </div>
+</body>
 
 
     <script>
@@ -106,19 +119,19 @@
 		max: 25,
 		speed: 400,
         glare:true,
-        "max-glare":1,
+        "max-glare":0.2,
 	});
     </script>
 
     <script>
         VanillaTilt.init(document.querySelectorAll(".holder"), {
-		max: 15,
-		speed: 400,
+		max: 10,
+		speed: 50,
         scale:1.1,
         easing:"cubic-bezier(.03,.98,.52,.99)",
-        perspective:  2000,
+        perspective:  10000,
         glare:true,
-        "max-glare":0.3, 
+        "max-glare":0.2, 
         gyroscope: true,  
     gyroscopeMinAngleX: -45,    
     gyroscopeMaxAngleX:  45,  
@@ -128,5 +141,15 @@
 	});
 	
     </script>
+
+<script>
+    VanillaTilt.init(document.querySelectorAll("span"), {
+    max: 25,
+    speed: 100,
+    glare:true,
+    "max-glare":0.5,
+    perspective:1000,
+});
+</script>
 </html>
 
